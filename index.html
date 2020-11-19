@@ -1,5 +1,5 @@
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <article>
 
 <ul style="
@@ -18,7 +18,9 @@
     <button>Executive</button>
   </li>
 <li class="bg-blue">
-    <button>Unlimited</button>
+    <button style="
+    border-right: 2px solid #008566;
+">Unlimited</button>
   </li></ul>  
 
 <table>
@@ -187,7 +189,7 @@
    outline: 0;
 }
 body { 
-  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family:roboto;
   font-size:14px;
   padding:14px;
 }
@@ -285,8 +287,28 @@ td.default {
     color: #7B8187;
 }
 
-tr.grey-chart {
+tr.grey-chart td {
     background: #DEE2E6;
+}
+
+td {
+    background: white;
+}
+
+.button-4 {
+    padding-right: 32px;
+    padding-left: 32px;
+    border-radius: 100px;
+    background-color: rgb(0, 133, 102);
+    transition-property: all;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+    color: rgb(255, 255, 255);
+}
+
+
+.button-4:hover, .button-4.-wfp-hover {
+    opacity: 0.6;
 }
 </style>
 
@@ -341,5 +363,4 @@ $( "ul" ).on( "click", "li", function() {
   $(".accordion_body-2:first").addClass("open");
   
 </script>
-
 
