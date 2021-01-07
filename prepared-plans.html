@@ -8,7 +8,7 @@
   <li class="bg-blue">
     <button style="
     background: linear-gradient(180deg, #DEE2E6 0%, rgba(222, 226, 230, 0.38) 100%);
-">Silver</button>
+">Free</button>
   </li>
   <li class="bg-blue active">
     <button style="
@@ -40,7 +40,7 @@
     color: #B6BCC3;
     display: block;
     margin-bottom: 20px;
-">per year</span><a href="https://app.zenledger.io/new_sign_up" class="button-4" style="
+">per year</span><a href="https://zenledger-website.webflow.io/product/tax-professional-prepared-plan-silver" class="button-4" style="
     padding-top: 9px;
     padding-bottom: 9px;
     text-decoration: none;
@@ -63,7 +63,7 @@
     color: #B6BCC3;
     display: block;
     margin-bottom: 20px;
-">per year</span><a href="https://app.zenledger.io/new_sign_up" class="button-4" style="
+">per year</span><a href="https://zenledger-website.webflow.io/product/tax-professional-prepared-plan-gold" class="button-4" style="
     padding-top: 9px;
     padding-bottom: 9px;
     text-decoration: none;
@@ -82,7 +82,7 @@
     color: #B6BCC3;
     display: block;
     margin-bottom: 20px;
-">per year</span><a href="https://app.zenledger.io/new_sign_up" class="button-4" style="
+">per year</span><a href="https://zenledger-website.webflow.io/product/tax-professional-prepared-plan-diamond" class="button-4" style="
     padding-top: 9px;
     padding-bottom: 9px;
     text-decoration: none;
@@ -93,7 +93,8 @@
 ">Select</a></td></tr>
     
     <tr>
-      <td>Transactions</td>
+      <td>Transactions
+</td>
       
       
       
@@ -116,7 +117,8 @@
     
     
   <tr>
-      <td>Transactions</td>
+      <td>Total asset value
+</td>
       
       
       
@@ -131,7 +133,9 @@
     font-size: 14px;
     font-weight: 500;
 ">Upto $1M</span></td></tr><tr>
-      <td>Transactions</td>
+      <td>
+Number of Tax forms
+</td>
       
       
       
@@ -146,7 +150,9 @@
     font-size: 14px;
     font-weight: 500;
 ">Upto 8</span></td></tr><tr>
-      <td>Transactions</td>
+      <td>
+State tax returns
+</td>
       
       
       
@@ -161,7 +167,8 @@
     font-size: 14px;
     font-weight: 500;
 ">2</span></td></tr><tr>
-      <td>Transactions</td>
+      <td>
+Return preparation time</td>
       
       
       
@@ -194,7 +201,6 @@
 body { 
   font-family:roboto;
   font-size:14px;
-  padding:14px;
 }
 article {
   width:100%;
@@ -222,10 +228,10 @@ button {
   background:#FFF;
   font-size:14px;
   font-weight:500;
-  color:Black
+  color:#999
 }
 li.active button {
-  background:#008566!important;
+  background:#008566;
   color:white;
 }
 table { border-collapse:collapse; table-layout:fixed; width:100%; }
@@ -234,7 +240,7 @@ td, th {
   height:53px
 }
 td, th {
-    border: 1px solid #c5c5c5;
+    border: 1px solid #c5c5c5!important;
     padding: 10px;
     empty-cells: show;
     font-size: 16px;
@@ -251,9 +257,9 @@ td.default {
   display:table-cell;
 }
 .bg-blue {
-
+    background: none;
     border: none;
-    color: black;
+    color: #008566;
     font-weight: 500;
     font-size: 18px;
 }
@@ -265,7 +271,7 @@ td.default {
 .txt-top { position:relative; top:-9px; left:-2px; }
 .tick { font-size:18px; color:#2CA01C; }
 .hide {
-  border:0;
+  border:0 !important;
   background:none;
 }
 
@@ -313,7 +319,14 @@ td {
     opacity: 0.6;
 }
 
+td.default {
+    background: rgb(0 133 102 / .1);
+}
 
+th.bg-blue.default {
+    background: linear-gradient(260deg, #008566, #1AAB7F);
+    color: white;
+}
 
 .grey-chart td.default {
     background: #CAD9D9;
